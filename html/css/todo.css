@@ -1,0 +1,35 @@
+body{
+    font-family: Arial;
+}
+.js-grid,.grid-js{
+   display: grid; 
+   grid-template-columns: 200px 150px 100px ;
+   column-gap: 15px;
+   row-gap: 15px;
+   align-items: center;
+}
+.grid-js{
+margin-bottom: 15px;
+align-items: stretch;
+}
+.js-add{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.todo-js,.duedate-js{
+    font-size: 15px;
+    padding: 15px;
+}
+.del{
+    color:white;
+    background-color: darkred;
+    border: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+
+}
