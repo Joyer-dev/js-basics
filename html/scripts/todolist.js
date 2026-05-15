@@ -29,11 +29,38 @@ updateTodolist();
 
 
 function addTodoList(){
-    const inputElement=document.querySelector('.js-todo');
-    const name=inputElement.value;
-    const dateinputElement=document.querySelector('.js-duedate');
-    const dueDate=dateinputElement.value;
-   todoList.push({ name, dueDate });
-   inputElement.value='';
-   updateTodolist();
+    const inputElement = document.querySelector('.js-todo');
+    const name = inputElement.value.trim();
+
+    const dateinputElement = document.querySelector('.js-duedate');
+    const dueDate = dateinputElement.value;
+
+    if (name === '' || dueDate === '') {
+        return;
+    }
+
+    todoList.push({ name, dueDate });
+
+    inputElement.value = '';
+    dateinputElement.value = '';
+
+    updateTodolist();
+}
+function addTodoList(){
+    const inputElement = document.querySelector('.js-todo');
+    const name = inputElement.value.trim();
+
+    const dateinputElement = document.querySelector('.js-duedate');
+    const dueDate = dateinputElement.value;
+
+    if (name === '' || dueDate === '') {
+        return;
+    }
+
+    todoList.push({ name, dueDate });
+
+    inputElement.value = '';
+    dateinputElement.value = '';
+
+    updateTodolist();
 }
