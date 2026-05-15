@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="" class="js-button">Click</button>
+    <button onclick="" class="js-button btn">Click</button>
    <script>
-       const buttonElement=document.querySelector('.js-button');
+      /* const buttonElement=document.querySelector('.js-button');
        const eventListener=()=>{
            console.log('click');
        };
@@ -19,8 +19,8 @@
            console.log('click2');
         });
 
-       /*
-        /*function greeting(){
+       
+       function greeting(){
             console.log('hello');
         
         }
@@ -44,7 +44,7 @@
         }
         display(2);
         
-       display(greeting());
+       display(greeting());*/
        setTimeout(function (){
            console.log('timeout');
        },10000);
@@ -55,7 +55,7 @@
        const myArray=['wash dishes',
        'make dinner',
        'watch youtube'].forEach((value,index)=>{
-           if(index===1){
+           if(index===3){
                return;
            }
            console.log(index);
@@ -69,14 +69,15 @@
        const arrorfun=()=>2+3;
        console.log(arrorfun());
 
-       const object2=() = {
-           method : => {
+       const object2=() => {
+           method : ()=> {
 
            }
        },
-       method() {
+       method=() =>{
 
-       };*/
+       };
+     
         </script>
 </body>
 </html>
